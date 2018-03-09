@@ -19,32 +19,45 @@
 			
 			text-align: center;
 		}
-		.introtop h1, .orderonline h1, .specialoffer h1, .specialmenu h1{
+		.introtop h1, .orderonline h1, .specialoffer h1, .specialmenu h1, .reservation h1{
 			font-family: great-vibes;
 		}
 		.small-border{
 			width: 200px;
 			height: 30px;
 		}
-		.orderonline, .specialoffer, .specialmenu{
+		.orderonline, .specialoffer, .specialmenu, .reservation{
 			text-align: center;
 		}
 		.orderonlinebtn{
 			padding: 10px 30px;
 			margin-top: 10px;
-			background-color: #B0AEB1;
+			background-color: #8E8741;
+			border: none;
 			border-radius: 10px;
+			color: #fff;
 		}
 		.discountcircle{
 			padding: 30px 30px;
 			border-radius: 50%;
-			background: #733A99;
+			animation: pulse 5s infinite;
 			color: #fff;
 			width: 10%;
 			text-align: center;
 			margin: auto;
 			font-size: 30px;
 		}
+		@keyframes pulse {
+			  0% {
+			    background-color: #7017CB;
+			  }
+			  50% {
+			    background-color: #BE2C81;
+			  }
+			  100%{
+			    background-color: #7017CB;
+			  }
+			}
 		.leftitem{
 			float: left;
 			width: 90%;
@@ -76,6 +89,22 @@
 			padding-bottom: 40px;
 
 		}
+		.orderonline, .reservation{
+			background: #e4efc0; 
+			background: -moz-linear-gradient(top,  #e4efc0 0%, #abbd73 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #e4efc0 0%,#abbd73 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #e4efc0 0%,#abbd73 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4efc0', endColorstr='#abbd73',GradientType=0 ); /* IE6-9 */
+
+			border-radius: 15px;
+			background-attachment: fixed;
+			padding: 30px 0px;
+			color: #000;
+		}
+		.introtop p{
+			margin: 40px 0;
+		}
+		
 
 	</style>
 </head>
@@ -93,12 +122,20 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-6">
 				<div class="orderonline">
 					<h1>Order Online</h1>
-						<div ><img src="img/divider.png" class="small-border"></div>
+						<div ><img src="img/divider.png" class="small-border white"></div>
 					<p>Having A Night In? <br> Now You Can Order Online</p>
 					<button class="orderonlinebtn">Order Online</button>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="reservation">
+					<h1>Reservation</h1>
+						<div ><img src="img/divider.png" class="small-border white"></div>
+					<p>For Dinner and<br>Enjoy a Sumptuous Culinary Experience</p>
+					<button class="orderonlinebtn">Reservation</button>
 				</div>
 			</div>
 		</div>
